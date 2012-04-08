@@ -1,0 +1,25 @@
+CREATE TABLE sections (
+    id INTEGER UNSIGNED NOT NULL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+)
+ENGINE=InnoDB;
+    
+CREATE TABLE articles (
+    id INTEGER UNSIGNED NOT NULL PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    description VARCHAR(150) NOT NULL,
+    content TEXT,
+    preview_image VARCHAR(50) NOT NULL,
+    section_id INTEGER UNSIGNED NOT NULL,
+    FOREIGN KEY (section_id) REFERENCES sections(id)
+)
+ENGINE=InnoDB;
+
+CREATE TABLE features (
+    id INTEGER UNSIGNED NOT NULL PRIMARY KEY,
+    article_id INTEGER UNSIGNED NOT NULL,
+    section_id INTEGER UNSIGNED NOT NULL,
+    status TINYINT(1) UNSIGNED NOT NULL DEFAULT 1
+)
+ENGINE=InnoDB;
+    

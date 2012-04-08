@@ -1,0 +1,70 @@
+<dataset>
+ <table name="sections">
+  <column>id</column>
+  <column>name</column>
+  <row>
+   <value>1</value>
+   <value>Gadgets</value>
+  </row>
+  <row>
+   <value>2</value>
+   <value>Programming</value>
+  </row>
+ </table>
+ <table name="articles">
+  <column>id</column>
+  <column>title</column>
+  <column>description</column>
+  <column>content</column>
+  <column>preview_image</column>
+  <column>section_id</column>
+  <row>
+   <value>1</value>
+   <value>Android vs iOS</value>
+   <value>Lorem ipsum dolor sit amet</value>
+   <value>Aliquam scelerisque rhoncus porttitor. Nullam eget pulvinar magna. In vel lectus ut diam adipiscing porta vitae id nisi.</value>
+   <value>android.jpg</value>
+   <value>1</value>
+  </row>
+  <row>
+   <value>2</value>
+   <value>Android vs Wp7</value>
+   <value>Cras purus mauris, ultrices sed mattis</value>
+   <value>Nullam eget metus placerat velit dignissim tempor. Praesent at eleifend massa. Aliquam erat volutpat.</value>
+   <value>wp7.jpg</value>
+   <value>1</value>
+  </row>
+  <row>
+   <value>3</value>
+   <value>iOS 5</value>
+   <value>Tempus odio urna</value>
+   <value>Donec non turpis quam, ac vehicula sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</value>
+   <value>ios.jpg</value>
+   <value>1</value>
+  </row>
+ </table>
+ <table name="features">
+  <column>id</column>
+  <column>article_id</column>
+  <column>section_id</column>
+  <column>status</column>
+  <row>
+   <value>1</value>
+   <value>1</value>
+   <value>1</value>
+   <value>1</value>
+  </row>
+  <row>
+   <value>2</value>
+   <value>2</value>
+   <value>1</value>
+   <value>1</value>
+  </row>
+  <row>
+   <value>3</value>
+   <value>3</value>
+   <value>1</value>
+   <value>1</value>
+  </row>
+ </table>
+</dataset>
